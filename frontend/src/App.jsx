@@ -8,6 +8,16 @@ import Terms from './pages/Terms';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import Home from './pages/Home';
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
+}
+
 import WhatsAppButton from './components/WhatsAppButton';
 // Inside return statement, before closing main div:
 <WhatsAppButton />
