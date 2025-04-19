@@ -8,8 +8,10 @@ import subscriptionRoutes from './routes/subscriptionRoutes.js'
 
 dotenv.config()
 
-const app = express()
+const adminRoutes = require('./routes/adminRoutes')
+app.use('/api/admin', adminRoutes)
 
+const app = express()
 app.use(cors())
 app.use(express.json())
 
