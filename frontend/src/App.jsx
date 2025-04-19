@@ -53,7 +53,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-indigo-600 text-white text-center py-3 mt-10">
-      Made by GTUinsta Team | Founded by Ronak Prajapati
+      Made by GTUinsta Team | Founded by HHM
     </footer>
   );
 };
