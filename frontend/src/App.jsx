@@ -8,6 +8,11 @@ import Terms from './pages/Terms';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import WhatsAppButton from './components/WhatsAppButton';
+// Inside return statement, before closing main div:
+<WhatsAppButton />
+
+
 function App() {
   return (
     <Router>
