@@ -11,7 +11,7 @@ const Footer = () => {
         <a href="https://wa.me/917487979267" target="_blank" rel="noreferrer">
           <FaWhatsapp className="text-2xl hover:text-green-400" />
         </a>
-        <a href="https://github.com/dk51islive" target="_blank" rel="noreferrer">
+        <a href="https://github.com/GTU" target="_blank" rel="noreferrer">
           <FaGithub className="text-2xl hover:text-gray-400" />
         </a>
       </div>
@@ -21,3 +21,19 @@ const Footer = () => {
 }
 
 export default Footer
+
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-100 text-center p-4 mt-8">
+      <p className="text-sm">Made by GTUinsta Team | Founded by HHM</p>
+      <div className="flex justify-center gap-4 mt-2">
+        <a href="https://instagram.com/gtuinsta_" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://t.me/gtuinsta" target="_blank" rel="noreferrer">Telegram</a>
+        <a href="https://www.youtube.com/@gtu_insta" target="_blank" rel="noreferrer">YouTube</a>
+      </div>
+    </footer>
+  )
+}
+export default Footer
+
