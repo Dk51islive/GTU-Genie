@@ -12,6 +12,10 @@ import WhatsAppButton from './components/WhatsAppButton';
 // Inside return statement, before closing main div:
 <WhatsAppButton />
 
+import TermsAndConditions from './pages/TermsAndConditions'
+
+// Inside your route setup
+<Route path="/terms" element={<TermsAndConditions />} />
 
 function App() {
   return (
