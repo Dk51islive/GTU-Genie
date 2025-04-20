@@ -111,4 +111,5 @@ import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
 <Footer />
 
+<Route path="/terms" element={<Terms />} />
 
