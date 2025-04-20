@@ -2,13 +2,33 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Subscription from './pages/Subscription';
+import About from './pages/About';
 import Dashboard from './pages/Dashboard';
-import Terms from './pages/Terms';
+import Subscription from './pages/Subscription';
+import Login from './pages/Login';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { UserProvider } from './context/UserContext';
 
-import Home from './pages/Home';
+const App = () => {
+  return (
+    <UserProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/subscription" element={<Subscription />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </UserProvider>
+  );
+};
+
+export default App;
 
 function App() {
   return (
@@ -27,24 +47,7 @@ import TermsAndConditions from './pages/TermsAndConditions'
 // Inside your route setup
 <Route path="/terms" element={<TermsAndConditions />} />
 
-function App() {
-  return (
-    <Router>
-      <div className="min-h-screen bg-gray-50 text-gray-800">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/subscribe" element={<Subscription />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/terms" element={<Terms />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
-}
 
-export default App;
 
 // === components/Navbar.jsx ===
 import React from 'react';
