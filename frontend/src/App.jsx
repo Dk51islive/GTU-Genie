@@ -81,3 +81,23 @@ const Footer = () => {
 };
 
 export default Footer;
+
+import ProtectedRoute from './utils/ProtectedRoute';
+
+<Route
+  path="/dashboard"
+  element={
+    <ProtectedRoute>
+      <Dashboard />
+    </ProtectedRoute>
+  }
+/>
+<Route
+  path="/subscription"
+  element={
+    <ProtectedRoute>
+      <Subscription />
+    </ProtectedRoute>
+  }
+/>
+
