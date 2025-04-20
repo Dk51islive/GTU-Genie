@@ -60,3 +60,16 @@ const Footer = () => {
 };
 
 export default Footer;
+
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer className="text-center p-4 mt-8 border-t text-sm bg-gray-100">
+      Made by GTUinsta Team | Founded by HHM <br />
+      <a href="https://instagram.com/gtuinsta_" target="_blank" className="text-blue-600">@gtuinsta_</a>
+    </footer>
+  );
+};
+
+export default Footer;
