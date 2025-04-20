@@ -14,3 +14,19 @@ const WhatsAppButton = () => {
 }
 
 export default WhatsAppButton
+
+import React from 'react';
+
+const WhatsAppButton = () => {
+  return (
+    <a
+      href="https://wa.me/917487979267"
+      className="fixed bottom-6 left-6 bg-green-500 text-white px-4 py-2 rounded-full shadow-xl z-50"
+      target="_blank" rel="noreferrer"
+    >
+      WhatsApp Support
+    </a>
+  );
+};
+
+export default WhatsAppButton;
