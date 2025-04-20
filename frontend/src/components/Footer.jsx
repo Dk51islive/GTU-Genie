@@ -48,3 +48,15 @@ const Footer = () => {
 };
 
 export default Footer;
+
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-white py-4 mt-10 text-center text-sm">
+      Made by GTUinsta Team | Founded by HHM
+    </footer>
+  );
+};
+
+export default Footer;
