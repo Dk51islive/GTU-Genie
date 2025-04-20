@@ -38,3 +38,19 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+import React from 'react';
+import { useUser } from '../context/UserContext';
+
+const Dashboard = () => {
+  const { user } = useUser();
+
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4">Welcome, {user?.name || 'Student'}!</h2>
+      <p>This is your dashboard where you can access your subscriptions, updates, and personal content.</p>
+    </div>
+  );
+};
+
+export default Dashboard;
