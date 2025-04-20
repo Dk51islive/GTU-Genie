@@ -7,6 +7,8 @@ import authRoutes from './routes/authRoutes.js';
 import referralRoutes from './routes/referralRoutes.js';
 import subscriptionRoutes from './routes/subscriptionRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
+import paymentRoutes from './routes/paymentRoutes.js';
+app.use('/api/payment', paymentRoutes);
 
 dotenv.config();
 const app = express();
