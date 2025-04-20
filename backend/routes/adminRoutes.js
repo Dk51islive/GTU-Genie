@@ -18,3 +18,12 @@ router.get('/dashboard', authMiddleware.verifyAdmin, async (req, res) => {
 })
 
 module.exports = router
+
+import express from 'express';
+import { getDashboardStats } from '../controllers/adminController.js';
+const router = express.Router();
+
+router.get('/stats', getDashboardStats);
+
+export default router;
+
