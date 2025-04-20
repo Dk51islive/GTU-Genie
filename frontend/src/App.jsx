@@ -101,3 +101,7 @@ import ProtectedRoute from './utils/ProtectedRoute';
   }
 />
 
+import BotWidget from './components/BotWidget';
+// Then inside the return:
+<BotWidget />
+
