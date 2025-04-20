@@ -4,8 +4,9 @@ import dotenv from 'dotenv';
 import connectDB from './db.js';
 
 import authRoutes from './routes/authRoutes.js';
-import subscriptionRoutes from './routes/subscriptionRoutes.js';
 import referralRoutes from './routes/referralRoutes.js';
+import subscriptionRoutes from './routes/subscriptionRoutes.js';
+import adminRoutes from './routes/adminRoutes.js';
 
 dotenv.config();
 const app = express();
@@ -19,8 +20,9 @@ connectDB();
 
 // Use Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/subscription', subscriptionRoutes);
 app.use('/api/referral', referralRoutes);
+app.use('/api/subscription', subscriptionRoutes);
+app.use('/api/admin', adminRoutes);
 
 app.get('/', (req, res) => {
   res.send('GTU Genie API is running!');
