@@ -108,3 +108,7 @@ import BotWidget from './components/BotWidget';
 import WhatsAppButton from './components/WhatsAppButton';
 <WhatsAppButton />
 
+import Footer from './components/Footer';
+<Footer />
+
+
