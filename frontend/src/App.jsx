@@ -105,3 +105,6 @@ import BotWidget from './components/BotWidget';
 // Then inside the return:
 <BotWidget />
 
+import WhatsAppButton from './components/WhatsAppButton';
+<WhatsAppButton />
+
